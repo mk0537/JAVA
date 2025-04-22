@@ -1,0 +1,49 @@
+package ex06_List;
+
+import java.util.ArrayList;
+
+public class Ex03_ArrayList {
+	public static void main(String[] args) {
+		// 사람에 대한 정보를 저장하고 싶다면?
+		// 이름, 키, 몸무게, 주소, 나이 등등..
+		// 제네릭 타입에 <Person>와 같이 Person 클래스 타입이 들어갈 수 있음
+		ArrayList<Person> list = new ArrayList();
+		
+		Person p1 = new Person();
+		p1.name = "홍길동";
+		p1.age = 30;
+		p1.height = 184.4;
+		
+		Person p2 = new Person();
+		p2.name = "홍길순";
+		p2.age = 24;
+		p2.height = 176.4;
+		
+		
+		// 리스트에 요소 추가
+		list.add(p1);
+		list.add(p2);
+		
+		
+		// 객체의 주소가 출력됨
+		System.out.println(list.get(0)); // 4e50df2e
+		
+		
+		// p1의 정보 출력
+		System.out.println(list.get(0).name);
+		System.out.println(list.get(0).age);
+		System.out.println(list.get(0).height);
+		
+		// p2의 정보 출력
+		System.out.println(list.get(1).name);
+		System.out.println(list.get(1).age);
+		System.out.println(list.get(1).height);
+		
+		
+		
+		
+		
+		
+		
+	}
+}

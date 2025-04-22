@@ -45,23 +45,35 @@ public class Exam1 {
 			// 입력 받는 프로그램 작성하기
 
 			Scanner sc = new Scanner(System.in);
-			
-			int[][] arr2 = new int[3][];
-			System.out.print("인원수를 입력하세요. : ");
-			int number = sc.nextInt();
+			System.out.print("등록할 인원 수 : ");
+			int x = sc.nextInt();
 			
 			
+			String[][] stdInfo = new String[x][3]; // [행][열]
 			
-			for(int i = 1; i <= number; i++) {
-					
+			
+			for (int i = 0; i < stdInfo.length; i++) {
+				System.out.print("이름 : ");
+				stdInfo[i][0] = sc.next();
+				System.out.print("수학 : ");
+				stdInfo[i][1] = sc.next();
+				System.out.print("영어 : ");
+				stdInfo[i][2] = sc.next();
+				System.out.println("----------------------");
+	        }
+
+
+			System.out.printf("%d명 등록 완료 \n", stdInfo.length);
+			
+			
+			for(int i = 0; i < stdInfo.length; i++) {
+				for(int j = 0; j < stdInfo[i].length; j++) { 
+					// stdInfo[i].length 
+					System.out.println(stdInfo[i][j] + " ");
+				}
+				System.out.println();
 			}
 			
-			System.out.print("이름을 입력하세요. : ");
-			String name = sc.toString();
-			System.out.print("수학 점수를 입력하세요. : ");
-			String math = sc.toString();
-			System.out.print("영어 점수를 입력하세요. : ");
-			String eng = sc.toString();
 			
 			
 			

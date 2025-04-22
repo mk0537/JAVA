@@ -1,0 +1,7 @@
+love : 1
+java : 1
+i : 2
+hate : 1
+hello : 1
+it : 1
+you : 1
